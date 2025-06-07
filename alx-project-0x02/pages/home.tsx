@@ -1,12 +1,16 @@
-import React from 'react';
+// pages/home.tsx
 
-const Home = () => {
+import React from 'react';
+import Card from '../components/common/Card';
+
+const HomePage = () => {
   return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the home page of our Next.js app.</p>
+    <div className="p-8">
+      <h1 className="text-2xl font-bold mb-6">Home Page</h1>
+      <Card title="Welcome!" content="This is the home page of our app." />
+      <Card title="Reusable Card" content="This card is rendered using a reusable component." />
     </div>
   );
 };
 
-export default Home;
+export default HomePage;
